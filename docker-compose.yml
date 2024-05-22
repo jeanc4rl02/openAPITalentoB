@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ### MySQL database for TalentoB project
+  db-orders:
+    container_name: db_talentob
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: talentob
+      MYSQL_USER: jeanc4rl02
+      MYSQL_PASSWORD: Test123
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
