@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://127.0.0.1:5500/")
+@CrossOrigin(origins = "https://jeanc4rl02.github.io/TalentoB-Front/")
 public class QuestionAnsweringController {
 
     @Autowired
